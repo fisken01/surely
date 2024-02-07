@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <title></title>
+</head>
+<body>
+    <div id="app">
+        <div class="login">
+            <div class="loginform">
+                <ion-icon v-if="lightmode" name="flash-outline" class="switchmode" @click="switchMode('dark')"></ion-icon>
+                <ion-icon v-if="darkmode" name="flash-off-outline" class="switchmode" @click="switchMode('light')"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/build.js"></script>
+</body>
+</html>
